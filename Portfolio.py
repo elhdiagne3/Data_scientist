@@ -1,39 +1,30 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
-
 import streamlit as st
 from streamlit_option_menu import option_menu
 
 st.set_page_config(page_title="Elhadji Diaraff Diagne - Data Scientist Portfolio", layout="wide")
 
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
-# css
+# css for mobile responsiveness and improved styling
 st.markdown("""
     <style>
     /* Title Styling */
     h1 {
         color: #2C3E50;
         text-align: center;
-        margin-bottom: 10px;  /* Reduced margin */
+        margin-bottom: 10px;
         font-family: 'Bahnschrift Light SemiCondensed';
-        font-size: 28px;  /* Reduced font size */
+        font-size: 28px;  
     }
 
     /* Subheader Styling */
     h3 {
         color: #2C3E50;
         text-align: center;
-        margin-bottom: 20px;  /* Reduced margin */
+        margin-bottom: 20px;
         font-family: 'Bahnschrift Light SemiCondensed';
-        font-size: 20px;  /* Reduced font size */
+        font-size: 20px;
     }
 
     /* Horizontal Menu Styling */
@@ -46,9 +37,9 @@ st.markdown("""
     h2 {
         color: #2980B9;
         border-bottom: 2px solid #2980B9;
-        padding-bottom: 5px;  /* Reduced padding */
+        padding-bottom: 5px;
         font-family: 'Bahnschrift Light SemiCondensed';
-        font-size: 24px;  /* Reduced font size */
+        font-size: 24px;
     }
 
     /* Content Styling */
@@ -60,6 +51,22 @@ st.markdown("""
         font-family: 'Bahnschrift Light SemiCondensed';
         margin: 0 auto;
         max-width: 800px;
+        padding: 15px; /* Added padding for better mobile readability */
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        .content {
+            font-size: 16px;
+        }
     }
 
     /* Bold and Dark Blue Styling */
@@ -71,8 +78,8 @@ st.markdown("""
     /* Footer Styling */
     .footer {
         text-align: center;
-        margin-top: 10px;  /* Reduced margin */
-        padding: 10px;  /* Increased padding for better spacing */
+        margin-top: 10px;
+        padding: 10px;
         color: #ffffff;
         background-color: #2980B9;
         font-family: 'Bahnschrift Light SemiCondensed';
@@ -80,9 +87,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-
-
-#Title
+# Title
 st.title("Elhadji Diaraff DIAGNE")
 st.subheader("Statistician and Data Scientist")
 
