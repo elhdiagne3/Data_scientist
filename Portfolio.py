@@ -7,7 +7,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-# Page configuration
 st.set_page_config(page_title="Elhadji Diaraff Diagne - Data Scientist Portfolio", layout="wide")
 
 #!/usr/bin/env python
@@ -16,7 +15,7 @@ st.set_page_config(page_title="Elhadji Diaraff Diagne - Data Scientist Portfolio
 # In[ ]:
 
 
-# Custom CSS for enhanced design
+# css
 st.markdown("""
     <style>
     /* Title Styling */
@@ -83,7 +82,7 @@ st.markdown("""
 
 
 
-# Add a title at the top
+#Title
 st.title("Elhadji Diaraff DIAGNE")
 st.subheader("Statistician and Data Scientist")
 
@@ -91,7 +90,7 @@ st.subheader("Statistician and Data Scientist")
 selected = option_menu(
     None, 
     ["About Me", "Skills", "Projects", "Experience", "Education", "Contact"], 
-    icons=["person", "bar-chart", "briefcase", "award", "book", "envelope"], 
+    icons=["person", "bar-chart", "✅", "award", "book", "envelope"], 
     menu_icon="cast", 
     default_index=0, 
     orientation="horizontal"
@@ -113,46 +112,46 @@ if selected == "About Me":
 
 # Skills Section
 elif selected == "Skills":
-    st.header("Skills")
+    st.header("📶 Skills")
     st.markdown("""
         <div class="content">
-        - <b>Exploratory statistics & Data Science skills</b><br>
+        👉 <b>Exploratory statistics & Data Science skills</b><br>
             Linear model, Logistic regression, Discriminant analysis, Inferential Statistics, Multidimensional data analysis (PCA, CFA, MCA),
             Time Series Forecasting, Machine learning (Decision trees, Ensemble Models, support vector machines), Neural networks and deep learning,
             Natural language processing (NLP), Text mining and sentiment analysis, Web scraping<br>
-        - <b>Big Data Technologies:</b> Spark, Pyspark<br>
-        - <b>Database Management:</b> SQL, NoSQL<br>
-        - <b>Data Visualization Tools:</b> Power BI, SAS Viya, Streamlit, Dash, Shiny<br>
-        - <b>Statistical Software Proficiency:</b> R, Python, SAS, SQL, Stata<br>
-        - <b>Experimental Design and Hypothesis Testing</b><br>
-        - <b>Bayesian Statistics</b><br>
-        - <b>Geomatics:</b> Area map making, Geo-referencing, Representation of digital data in a map (Arcgis, Qgis, Philcarto)
+        👉 <b>Big Data Technologies:</b> Spark, Pyspark<br>
+        👉 <b>Database Management:</b> SQL, NoSQL<br>
+        👉 <b>Data Visualization Tools:</b> Power BI, SAS Viya, Streamlit, Dash, Shiny<br>
+        👉 <b>Statistical Software Proficiency:</b> R, Python, SAS, SQL, Stata<br>
+        👉 <b>Experimental Design and Hypothesis Testing</b><br>
+        👉 <b>Bayesian Statistics</b><br>
+        👉 <b>Geomatics:</b> Area map making, Geo-referencing, Representation of digital data in a map (Arcgis, Qgis, Philcarto)
         </div>
     """, unsafe_allow_html=True)
 
 # Projects Section
 elif selected == "Projects":
-    st.header("Projects")
+    st.header("✅ Projects")
     st.markdown("""
         <div class="content">
-        ### <b>Project 1: Predictive Modeling for Fraud Detection</b><br>
-        Developed a model to detect potential fraudsters in a telecommunications network, achieving a 95% accuracy.<br>
+        <b>👉 <a href="https://elhdiagne3.github.io/Portfolio/Projects/Water_Level_Predict1-checkpoint.html" target="_blank"> Sea level forcast</a></b><br>
+        Forecast and prediction of daily sea level for the stations of Saint-Joseph, Saint-François and Vieux-Québec;.<br>
         
-        ### <b>Project 2: Sea Level Prediction</b><br>
-        Built a prediction model to forecast sea levels for the next 24 hours, used by maritime operations.<br>
+        <b> 👉 <a href="https://frauddatascraping-bkp.streamlit.app" target="_blank">Web & social Media scraping</a></b><br>
+        This is a streamlit web scrapping app to extract insights about fraud data in social media .<br>
         
-        ### <b>Project 3: School Statistics Dashboard</b><br>
+        <b>Project 3: <a href="https://link_to_project_3.com" target="_blank">School Statistics Dashboard</a></b><br>
         Created a Power BI dashboard to compile and visualize school statistics for the Montreal School Service Center.
         </div>
     """, unsafe_allow_html=True)
 
-# Experience Section
-elif selected == "Experience":
-    st.header("Experience")
+# Experience Section 
+elif selected =="Experience":
+    st.header(" 💻 Experience")
     st.markdown("""
         <div class="content">
         - <b>Data Analyst Fraud and Income Insurance, Orange-Mali</b> (Since Nov. 2020)<br>
-            Data processing and analysis (SAS Viya, Python, SQL), Predictive modeling to anticipate fraud (Python), BI Development (Python SAS VIYA).<br>
+            Data processing and analysis (SAS Viya, Python, SQL); <br> Predictive modeling to anticipate fraud (Python), BI Development (Python SAS VIYA).<br>
         - <b>Artificial Intelligence Developer, Maritime Innovation Rimouski</b> (Mar. 2020 - July 2020)<br>
             Processing and analysis of sea level data, Forecast and prediction of daily sea level for the stations of Saint-Joseph, Saint-François, and Vieux-Québec.<br>
         - <b>Data Analyst, Montreal School Service Center (CSDM) Montreal, Canada</b> (Aug. 2020 - Nov. 2020)<br>
@@ -168,11 +167,11 @@ elif selected == "Experience":
 
 # Education Section
 elif selected == "Education":
-    st.header("Education")
+    st.header("📚 Education")
     st.markdown("""
         <div class="content">
-        - <b>Master's degree in Applied Mathematics and Computer Science with thesis</b> - University of Quebec at Trois-Rivieres, Quebec, Canada<br>
-            Research topic: Discriminant Analysis and Multilayer Perception - Formal links and applications.<br>
+        - <b> Master's degree in Applied Mathematics and Computer Science with thesis</b> - University of Quebec at Trois-Rivieres, Quebec, Canada</b><br>
+        <b>  🔍 Research topic: <a href="https://depot-e.uqtr.ca/id/eprint/9412/1/eprint9412.pdf" target="_blank"> Discriminant Analysis and Multilayer Perception - Formal links and applications.<br></b></a> 
         - <b>Machine Learning Module</b> - HEC of the University of Montreal, Canada<br>
             Projects and prediction models via: Decision trees, random forests, neural networks, SVM, regression methods; Association rules applied to business data; Customer segmentation, credit scoring.<br>
         - <b>Bachelor's degree in Applied Statistics and Computer Science</b> - Institute for Studies and Training in Statistics and Project Management and Evaluation (INEFSAGEP), Dakar, Senegal<br>
@@ -186,8 +185,7 @@ elif selected == "Contact":
     st.markdown("""
         <div class="content">
         Feel free to reach out to me through the following channels:<br><br>
-        - 📧 diagnediaraff@yahoo.fr<br>
-        - 🌐 <a href="https://elhdiagne3.github.io/Portfolio" target="_blank">My Portfolio</a><br>
+        - 📨 diagnediaraff@yahoo.fr<br
         - 🏠 178th Street, Fasu Kanu, Bamako, Mali<br>
         - 📞 +223 76 29 98 69<br>
         - 🌍 North Africa, West Africa, North America (Canada)
