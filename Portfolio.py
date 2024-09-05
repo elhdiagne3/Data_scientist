@@ -90,7 +90,7 @@ st.subheader("Statistician and Data Scientist")
 selected = option_menu(
     None, 
     ["About Me", "Skills", "Projects", "Experience", "Education", "Contact"], 
-    icons=["person", "bar-chart", "✅", "award", "book", "envelope"], 
+    icons=["person", "bar-chart", "briefcase", "award", "book", "envelope"], 
     menu_icon="cast", 
     default_index=0, 
     orientation="horizontal"
